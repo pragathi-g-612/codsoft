@@ -1,0 +1,210 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: #0e0363;
+    color: #fff;
+}
+
+.logo {
+    font-size: 80px;
+    font-weight: bold;
+    
+}
+
+.logo span {
+    color: gold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.hero {
+    background: url('images/back.jpeg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: darkgoldenrod;
+}
+
+.products {
+    padding: 40px;
+    background: #065171;
+    
+}
+
+.products h2 {
+    font-size: 28px;
+    color: #ffffff;
+}
+.products h3 {
+
+    color: black;
+}
+
+
+.watch-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.watch-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.watch-item:hover {
+    transform: scale(1.05);
+}
+
+.watch-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about, .contact {
+    padding: 40px;
+    background: #5dacce;
+    color: black;
+}
+.about h2, .contact h2 {
+    font-size: 28px;
+    color: black;
+}
+
+footer {
+    background: #0e0363;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .watch-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .watch-item {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 50px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+.aboutus-container {
+    display: flex;
+    justify-content: center; /* Centers the block horizontally */
+    align-items: center; /* Aligns content vertically (if needed) */
+    width: 100%; /* Makes it responsive */
+    background: #0a7daf;
+    background-color:; /* Light background color */
+    padding: 40px 0; /* Adds space around the block */
+}
+.aboutus {
+    max-width: 800px; /* Controls width for readability */
+    text-align: left; /* Ensures all text inside is left-aligned */
+    padding: 20px;
+    background: white; /* Optional: Adds a white background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    border-radius: 10px; /* Adds rounded corners */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+
+}
+
+.logo-img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    margin-right: 10px;
+}
